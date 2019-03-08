@@ -11,5 +11,8 @@
 2. `gridsome develop` to start the local dev server at `http://localhost:8080`.
 3. Happy coding 🎉🙌!
 
+### Contributors
+Check the [list of contributors](./blog/contributors.md).
+
 ### Credits
 This blog was made thanks to author of [this tutorial](https://alligator.io/vuejs/gridsome-blog).
