@@ -24,3 +24,12 @@ export default {
   }
 };
 </script>
+
+<style>
+#ek, #ek td {
+  border: 1px solid #000;
+}
+#ek a {
+  text-decoration: none;
+}
+</style>
