@@ -4,7 +4,10 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "add": "all-contributors add",
+    "check": "all-contributors check",
+    "gen": "all-contributors generate"
   },
   "dependencies": {
     "gridsome": "^0.5.0",
