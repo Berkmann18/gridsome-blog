@@ -12,7 +12,7 @@
     <p v-for="post in $page.posts.edges" :key="post.node.id">
       <g-link :to="post.node.path">
         {{ post.node.title }}
-      </g-link> - {{ post.node.excerpt }} <date> {{ timestamp2date(post.node.date) }}</date>
+      </g-link> - {{ post.node.excerpt }} <time>{{ timestamp2date(post.node.date) }}</time>
     </p>
 
     <h3>Some other stuff</h3>
@@ -58,7 +58,7 @@ export default {
 .home-links a {
   margin-right: 1rem;
 }
-date {
+time {
   color: grey;
   font-style: italic;
 }
