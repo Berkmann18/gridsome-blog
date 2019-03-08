@@ -1,5 +1,7 @@
 # My sample Gridsome blog
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3d07e272-80fc-4f03-bd86-a22cc4a1774a/deploy-status)](https://app.netlify.com/sites/zen-mclean-a08068/deploys)
+
 ### 1. Install Gridsome CLI tool if you don't have
 
 `npm i --global @gridsome/cli`
