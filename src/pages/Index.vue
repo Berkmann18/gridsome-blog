@@ -14,6 +14,7 @@
         {{ post.node.title }}
       </g-link> - {{ post.node.excerpt }} <time>{{ timestamp2date(post.node.date) }}</time>
     </p>
+    <Pager :info="$page.posts.pageInfo" :linkClass="{ pageNum: true }" />
 
     <h3>Some other stuff</h3>
     <p class="home-links">
@@ -25,8 +26,15 @@
 </template>
 
 <page-query>
-query Posts {
-  posts: allPost {
+query Posts ($page: Int) {
+  posts: allPost (perPage: 2, page: $page) @paginate {
+    totalCount
+    pageInfo {
+      totalPages
+      currentPage
+      isFirst
+      isLast
+    }
     edges {
       node {
         title
@@ -41,7 +49,12 @@ query Posts {
 </page-query>
 
 <script>
+import { Pager } from 'gridsome'
+
 export default {
+  components: {
+    Pager
+  },
   metaInfo: {
     title: 'Hello, world!'
   },
@@ -61,5 +74,8 @@ export default {
 time {
   color: grey;
   font-style: italic;
+}
+.pageNum {
+  margin-right: 2px;
 }
 </style>
