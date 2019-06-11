@@ -76,6 +76,13 @@ time {
   font-style: italic;
 }
 .pageNum {
+  border: 1px solid rgba(200, 200, 200, .75);
   margin-right: 2px;
+  padding: 1px;
+  text-decoration: none;
+}
+
+.pageNum.active {
+  border-color: #08F;
 }
 </style>
